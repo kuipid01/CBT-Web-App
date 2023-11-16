@@ -10,6 +10,8 @@ import {
 // import LandingPage from './pages/LandingPage.jsx';
 // import Navbar from './components/Navbar.jsx';
 import Login from './pages/Login.jsx';
+import TestPage from './pages/TestPage.jsx';
+import TestMangaement from './pages/TestMangaement.jsx';
 
 
 
@@ -42,6 +44,14 @@ const router = createBrowserRouter([
   }, {
     path: "/login",
     element: <Login />
+  },
+  {
+    path: "/testpage",
+    element: <TestPage />
+  },
+  {
+    path: "/manage",
+    element: <TestMangaement />
   },
   //  {
   //   path: "/register",
