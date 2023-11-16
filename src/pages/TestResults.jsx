@@ -6,7 +6,7 @@ const TestResults = () => {
       <h1 className="text-primary text-center mt-[2rem] text-3xl font-bold mb-[3rem]">
         Test Results
       </h1>
-      <div className="flex  border-2  w-[50%] mx-auto h-[40px] md:h-[50px]">
+      <div className="flex w-[80%]  border-2 md:w-[50%] mx-auto h-[40px] md:h-[50px]">
         <input className="flex-1 h-full px-2 outline-none" type="text" />
         <button className="bg-primary text-white h-full w-[25%]">Search</button>
       </div>
