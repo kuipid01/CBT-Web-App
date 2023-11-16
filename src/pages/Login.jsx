@@ -1,12 +1,19 @@
 import { AiOutlineLock, AiOutlineUser } from 'react-icons/ai'
+import { useNavigate } from 'react-router-dom'
 
 
 const Login = () => {
+  const navigate = useNavigate()
+  const handleSubmit = (e) => {
+    console.log('clicked')
+    e.preventDefault()
+    navigate('/testpage')
+  }
   return (
-    <div className='w-full flex h-screen justify-between items-center'>
+    <div  className='w-full flex h-screen justify-between items-center'>
       <img src="/assets/books.jpg" alt="" className="object-cover hidden md:flex w-1/2 h-full" />
       <div className="w-full md:w-1/2 flex flex-col justify-center items-center ">
-        <form className="w-3/4 mx-auto flex h-fit justify-center items-center p-3 flex-col" action="">
+        <form onSubmit={(e) => handleSubmit (e)} className="w-3/4 mx-auto flex h-fit justify-center items-center p-3 flex-col" action="">
       <h1 className="text-5xl font-bold">Log in</h1>
       <p className="font-light mt-2 text-gray-400">
         Enter your details to proceed
@@ -25,7 +32,7 @@ const Login = () => {
           <AiOutlineLock className='text-lg absolute top-1/2 transform -translate-y-1/2 right-3'/>
         </div>
       </div>
-      <button className=' bg-primary w-full py-[.8rem] hover:bg-primary/70 transition duration-100 ease-in-out mt-[1rem] rounded-md text-white font-bold '>Log In</button>
+      <button type='submit' className=' bg-primary w-full py-[.8rem] hover:bg-primary/70 transition duration-100 ease-in-out mt-[1rem] rounded-md text-white font-bold '>Log In</button>
         </form>
       </div>
     </div>

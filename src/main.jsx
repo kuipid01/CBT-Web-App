@@ -12,6 +12,8 @@ import {
 import Login from './pages/Login.jsx';
 import TestPage from './pages/TestPage.jsx';
 import TestMangaement from './pages/TestMangaement.jsx';
+import TestResults from './pages/TestResults.jsx';
+import AdminManageMent from './pages/AdminManageMent.jsx';
 
 
 
@@ -52,6 +54,14 @@ const router = createBrowserRouter([
   {
     path: "/manage",
     element: <TestMangaement />
+  },
+  {
+    path: "/results",
+    element: <TestResults />
+  },
+  {
+    path: "/adminmanage",
+    element: <AdminManageMent />
   },
   //  {
   //   path: "/register",
